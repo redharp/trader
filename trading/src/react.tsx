@@ -5,9 +5,11 @@ import { Linker } from "./components/Linker";
 
 const Index = () => {
     return (
-        <div>
-            💖 Trader
-            <Linker />
+        <div className="bg-teal-100 p-4 text-center container">
+            <div className="grid gap-4">
+                <p className="text-gray-700 text-base">💖 Trader</p>
+                <Linker />
+            </div>
         </div>
     );
 };

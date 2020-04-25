@@ -19,9 +19,22 @@ export function Linker() {
     }
 
     return (
-        <div>
-            <button onClick={() => getAccount()}>Link Ally</button>
-            <div>
+        <div className="bg-gray-100 max-w-sm rounded-lg overflow-y-auto shadow-lg">
+            <img
+                className=" p-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/00/Ally_Financial.svg"
+            />
+            <div className="px-6 py-4">
+                <div className="text-xl mb-2">
+                    <button
+                        className="w-1/2 sm:w-auto md:w-full lg:w-32 xl:w-3/4 rounded-lg bg-blue-100"
+                        onClick={() => getAccount()}
+                    >
+                        Link Ally
+                    </button>
+                </div>
+            </div>
+            <div className="px-6 py-4">
                 <h2>Account: {account}</h2>
                 <h3>Balance: {balance || 0}</h3>
                 <div>{summary}</div>
