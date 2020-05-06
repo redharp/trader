@@ -2,15 +2,18 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./assets/index.css";
 import { Linker } from "./components/Linker";
+import { SideBar } from "./components/SideBar";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Index = () => {
     return (
-        <div className="bg-teal-100 p-4 text-center container">
-            <div className="grid gap-4">
-                <p className="text-gray-700 text-base">💖 Trader</p>
-                <Linker />
+        <Router>
+            <div className="bg-gray-100">
+                <div className="grid gap-4 p-4 text-center container">
+                    <SideBar />
+                </div>
             </div>
-        </div>
+        </Router>
     );
 };
 
